@@ -1,0 +1,23 @@
+@import url(__button-add/profile__button-add.css);
+@import url(__button-add-vector/profile__button-add__vector.css);
+
+.profile {
+	width: 882px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+@media screen and (max-width: 882px) {
+	.profile {
+		width: 100vw;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.profile {
+		padding-top: 38.25px;
+		flex-direction: column;
+	}
+}

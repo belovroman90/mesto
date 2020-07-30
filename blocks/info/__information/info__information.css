@@ -1,0 +1,12 @@
+.info__information {
+	max-width: 336px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 540px) {
+	.info__information {
+		justify-content: center;
+		padding-bottom: 36px;
+	}
+}
