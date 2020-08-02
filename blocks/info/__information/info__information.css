@@ -1,0 +1,12 @@
+.info__information {
+	display: grid;
+	grid-template-columns: repeat(2, max-content);
+	grid-template-rows: repeat(2, max-content);
+}
+
+@media screen and (max-width: 540px) {
+	.info__information {
+		justify-content: center;
+		padding-bottom: 36.5px;
+	}
+}

@@ -1,0 +1,18 @@
+@import url(__avatar/info__avatar.css);
+@import url(__information/info__information.css);
+@import url(__title/info__title.css);
+@import url(__button-edit/info__button-edit.css);
+@import url(__subtitle/info__subtitle.css);
+
+.info {
+	max-width: 486px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+	.info {
+		flex-direction: column;
+	}
+}

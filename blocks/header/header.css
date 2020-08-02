@@ -1,0 +1,19 @@
+@import url(__logo/header__log.css);
+@import url(__line/header__line.css);
+
+.header {
+	width: 882px;
+	padding-top: 45px;
+}
+
+@media screen and (max-width: 882px) {
+	.header {
+		width: 100vw;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.header {
+		padding-top: 28px;
+	}
+}
