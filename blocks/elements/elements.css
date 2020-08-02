@@ -4,7 +4,7 @@
 	grid-template-rows: repeat(2, 1fr);
 	column-gap: 18px;
 	row-gap: 21px;
-	padding: 47.25px 0 66px 0;
+	padding: 47.25px 0 66px;
 }
 
 @media screen and (max-width: 882px) {
@@ -16,15 +16,15 @@
 
 @media screen and (max-width: 826px) {
 	.elements {
-		grid-template-columns: repeat(2, 34.14vw);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 2vw;
 	}
 }
 
 @media screen and (max-width: 540px) {
 	.elements {
-		grid-template-columns: 282px;
-		gap: 20px;
-		padding: 36px 0 48px 0;
+		grid-template-columns: 1fr;
+		gap: 21px;
+		padding: 36px 0 48px;
 	}
 }

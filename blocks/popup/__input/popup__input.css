@@ -1,0 +1,21 @@
+.popup__input {
+	border: 0;
+	width: 83.25%;
+	height: 27.26px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin: 29.74px auto 0;
+	padding: 0;
+	text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+	font-size: 14px;
+	line-height: 1.1;
+}
+
+.popup__input:first-child {
+	margin-top: 0;
+}
+
+.popup__input:focus {
+	outline: none;
+}

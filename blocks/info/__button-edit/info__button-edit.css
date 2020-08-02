@@ -1,8 +1,16 @@
 .info__button-edit {
+	border: 0;
+	outline: none;
 	width: 24px;
 	height: 24px;
-	margin-top: 11px;
+	margin-top: 12px;
 	background: url(../../../images/button-edit.svg);
+	transition: .3s ease;
+}
+
+.info__button-edit:hover {
+	cursor: pointer;
+	opacity: 0.6;
 }
 
 @media screen and (max-width: 540px) {

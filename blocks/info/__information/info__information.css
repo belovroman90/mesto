@@ -1,12 +1,12 @@
 .info__information {
-	max-width: 336px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(2, max-content);
+	grid-template-rows: repeat(2, max-content);
 }
 
 @media screen and (max-width: 540px) {
 	.info__information {
 		justify-content: center;
-		padding-bottom: 36px;
+		padding-bottom: 36.5px;
 	}
 }
