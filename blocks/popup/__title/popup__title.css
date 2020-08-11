@@ -5,4 +5,21 @@
 	font-size: 24px;
 	line-height: 1.1;
 	font-weight: 900;
+	transition: 0.6s ease;
+}
+
+@media screen and (max-width: 826px) {
+	.popup__title {
+		text-align: center;
+		max-width: 85%;
+		line-height: 1.4;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.popup__title {
+		font-size: 18px;
+		padding-left: 0;
+		padding-bottom: 30px;
+	}
 }

@@ -5,13 +5,19 @@
 @import url(__subtitle/info__subtitle.css);
 
 .info {
-	max-width: 486px;
+	max-width: 740px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 728px) {
+	.info {
+		max-width: min-content;
+	}
+}
+
+@media screen and (max-width: 550px) {
 	.info {
 		flex-direction: column;
 	}

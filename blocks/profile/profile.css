@@ -1,5 +1,4 @@
 @import url(__button-add/profile__button-add.css);
-@import url(__button-add-vector/profile__button-add__vector.css);
 
 .profile {
 	width: 882px;
@@ -9,13 +8,13 @@
 	padding-top: 40px;
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 1000px) {
 	.profile {
-		width: 100vw;
+		width: 88.125vw;
 	}
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
 	.profile {
 		padding-top: 42px;
 		flex-direction: column;

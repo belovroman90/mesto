@@ -7,24 +7,30 @@
 	padding: 47.25px 0 66px;
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 940px) {
 	.elements {
-		grid-template-columns: repeat(3, 31.97vw);
-		gap: 1.5vw;
-	}
-}
-
-@media screen and (max-width: 826px) {
-	.elements {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 30vw);
 		gap: 2vw;
 	}
+
+@media screen and (max-width: 870px) {
+	.elements {
+		grid-template-columns: repeat(2, 282px);
+	}
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 626px) {
 	.elements {
-		grid-template-columns: 1fr;
-		gap: 21px;
+		grid-template-columns: repeat(2, 45vw);
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.elements {
+		grid-template-columns: 282px;
+		gap: 20px;
 		padding: 36px 0 48px;
 	}
 }

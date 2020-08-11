@@ -4,86 +4,93 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="pages/index.css">
 	<title>Mesto</title>
 </head>
 
 <body class="body">
+
 	<header class="header">
-		<img class="header__logo" src="images/logo.png" alt="Логотип 'Место Россия'">
-		<div class="header__line"></div>
+		<img class="header__logo" src="images/logo.svg" alt="Логотип 'Место Россия'">
 	</header>
 
-	<section class="profile">
-		<div class="info">
-			<img class="info__avatar" src="images/Custo.png" alt="Фотография Жак-Ив Кусто">
-			<div class="info__information">
-				<h1 class="info__title">Жак-Ив Кусто</h1>
-				<button class="info__button-edit"></button>
-				<h2 class="info__subtitle">Исследователь океана</h2>
+	<main class="main">
+
+		<section class="profile">
+			<div class="info">
+				<img class="info__avatar" src="images/Custo.png" alt="Фотография Жак-Ив Кусто">
+				<div class="info__information">
+					<h1 class="info__title">Жак-Ив Кусто</h1>
+					<button class="info__button-edit" type="button"></button>
+					<p class="info__subtitle">Исследователь океана</p>
+				</div>
 			</div>
-		</div>
-		<button class="profile__button-add" type="button">
-			<div class="profile__button-add-vector"></div>
-		</button>
-	</section>
+			<button class="profile__button-add" type="button"></button>
+		</section>
 
-	<section class="elements">
+		<section class="elements">
 
-		<div class="element">
-			<img src="images/Normandie.jpg" alt="Нормандия" class="element__image">
-			<h3 class="element__title">Нормандия</h3>
-			<div class="element__like"></div>
-		</div>
 
-		<div class="element">
-			<img src="images/Provence.jpg" alt="Прованс" class="element__image">
-			<h3 class="element__title">Прованс</h3>
-			<div class="element__like"></div>
-		</div>
+			<div class="element">
+				<img src="images/Normandie.jpg" alt="Нормандия" class="element__image">
+				<h2 class="element__title">Нормандия</h2>
+				<button class="element__like" type="button"></button>
+			</div>
 
-		<div class="element">
-			<img src="images/Pamukkale.jpg" alt="Памуккале" class="element__image">
-			<h3 class="element__title">Памуккале</h3>
-			<div class="element__like"></div>
-		</div>
+			<div class="element">
+				<img src="images/Provence.jpg" alt="Прованс" class="element__image">
+				<h2 class="element__title">Прованс</h2>
+				<button class="element__like" type="button"></button>
+			</div>
 
-		<div class="element">
-			<img src="images/Fort.jpg" alt="Форт Боярд" class="element__image">
-			<h3 class="element__title">Форт Боярд</h3>
-			<div class="element__like"></div>
-		</div>
+			<div class="element">
+				<img src="images/Pamukkale.jpg" alt="Памуккале" class="element__image">
+				<h2 class="element__title">Памуккале</h2>
+				<button class="element__like" type="button"></button>
+			</div>
 
-		<div class="element">
-			<img src="images/Machu.jpg" alt="Мачу-Пикчу" class="element__image">
-			<h3 class="element__title">Мачу-Пикчу</h3>
-			<div class="element__like"></div>
-		</div>
+			<div class="element">
+				<img src="images/Fort.jpg" alt="Форт Боярд" class="element__image">
+				<h2 class="element__title">Форт Боярд</h2>
+				<button class="element__like" type="button"></button>
+			</div>
 
-		<div class="element">
-			<img src="images/Wall.jpg" alt="Великая Китайская Стена" class="element__image">
-			<h3 class="element__title">Великая Китайская Стена</h3>
-			<div class="element__like"></div>
-		</div>
+			<div class="element">
+				<img src="images/Machu.jpg" alt="Мачу-Пикчу" class="element__image">
+				<h2 class="element__title">Мачу-Пикчу</h2>
+				<button class="element__like" type="button"></button>
+			</div>
 
-	</section>
+			<div class="element">
+				<img src="images/Wall.jpg" alt="Великая Китайская Стена" class="element__image">
+				<h2 class="element__title">Великая Китайская Стена</h2>
+				<button class="element__like" type="button"></button>
+			</div>
+
+		</section>
+
+	</main>
 
 	<footer class="footer">
 		<p class="footer__copyright">© 2020 Mesto Russia</p>
 	</footer>
 
 	<div class="popup">
-		<form class="popup__container">
-			<h1 class="popup__title">Редактировать профиль</h1>
-			<fieldset class="popup__fieldset">
-				<input class="popup__input popup__input-name" type="text" required placeholder="Имя">
-				<input class="popup__input popup__input-job" type="text" required placeholder="О себе">
-				<button class="popup__button-save" type="submit">Сохранить</button>
-			</fieldset>
-			<button class="popup__button-close" type="button"></button>
-		</form>
+		<div class="popup__overlay">
+			<form class="popup__container">
+				<h3 class="popup__title">Редактировать профиль</h3>
+				<fieldset class="popup__fieldset">
+					<input class="popup__input popup__input_value_name" type="text" required placeholder="Имя">
+					<input class="popup__input popup__input_value_job" type="text" required placeholder="О себе">
+					<button class="popup__button-save" type="submit">Сохранить</button>
+				</fieldset>
+				<button class="popup__button-close" type="reset"></button>
+			</form>
+		</div>
 	</div>
+
 	<script src="script/script.js"></script>
+
 </body>
 
 </html>

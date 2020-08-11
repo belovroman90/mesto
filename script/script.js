@@ -1,31 +1,33 @@
 let popup = document.querySelector('.popup');
+let popupOverlay = popup.querySelector('.popup__overlay');
 let popupOpenButton = document.querySelector('.info__button-edit');
 let popupCloseButton = popup.querySelector('.popup__button-close');
 
-let popupOpen = function () {
-    popup.classList.toggle('popup_opened');
-}
-
-let popupClose = function (event) {
-    if (event.target !== event.currentTarget) return;
-    popupOpen();
-}
-
-popupOpenButton.addEventListener('click', popupOpen);
-popupCloseButton.addEventListener('click', popupOpen);
-popup.addEventListener('click', popupClose);
-
-
 let formElement = document.querySelector('.popup__container');
-let inputValue = formElement.querySelectorAll('.popup__input');
+let inputName = formElement.querySelector('.popup__input_value_name');
+let inputJob = formElement.querySelector('.popup__input_value_job');
+
 let title = document.querySelector('.info__title');
 let subtitle = document.querySelector('.info__subtitle');
 
+function popupToogle() {
+	if (popup.classList.contains('popup_opened') === false) {
+		inputName.value = title.textContent
+		inputJob.value = subtitle.textContent
+	}
+	if (event.target !== event.currentTarget) return;
+	popup.classList.toggle('popup_opened');
+}
+
+popupOpenButton.addEventListener('click', popupToogle);
+popupCloseButton.addEventListener('click', popupToogle);
+popupOverlay.addEventListener('click', popupToogle);
+
 function formSubmitHandler(evt) {
-    evt.preventDefault();
-    title.textContent = inputValue[0].value;
-    subtitle.textContent = inputValue[1].value;
-    popupOpen();
+	evt.preventDefault();
+	title.textContent = inputName.value;
+	subtitle.textContent = inputJob.value;
+	popupToogle();
 }
 
 formElement.addEventListener('submit', formSubmitHandler);

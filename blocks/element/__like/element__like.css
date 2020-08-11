@@ -1,9 +1,19 @@
 .element__like {
-	width: 21px;
+	border: 0;
+	outline: none;
+	padding: 0;
+	margin: 5px 17.24px 0 0;
+	width: 22px;
 	height: 19px;
 	background: url(../../../images/like.svg);
+	background-size: cover;
 	background-repeat: no-repeat;
-	position: absolute;
-	right: 21px;
-	bottom: 27px;
+	cursor: pointer;
+	transition: 0.1s linear;
+}
+
+.element__like:hover {
+	width: 24px;
+	height: 21px;
+	margin-right: 16px;
 }

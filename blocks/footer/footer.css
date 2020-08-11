@@ -6,13 +6,19 @@
 	display: flex;
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 898px) {
 	.footer {
-		width: 100vw;
+		width: 99.99%;
 	}
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 882px) {
+	.footer {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px) {
 	.footer {
 		padding-bottom: 36px;
 	}

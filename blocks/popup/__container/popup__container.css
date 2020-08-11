@@ -1,26 +1,39 @@
 .popup__container {
+	margin: 0 auto;
+	justify-self: center;
 	width: 430px;
 	border-radius: 10px;
 	background-color: #fff;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-	position: fixed;
-	top: 190px;
-	left: calc((100vw - 430px)/2);
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
+	transition: 0.3s ease;
+	position: relative;
 }
 
 @media screen and (max-width: 826px) {
 	.popup__container {
-		width: 350px;
-		left: calc((100vw - 350px)/2);
+		width: 55vw;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.popup__container {
+		width: 60vw;
 	}
 }
 
 @media screen and (max-width: 540px) {
 	.popup__container {
-		width: 300px;
-		left: calc((100vw - 300px)/2);
+		width: 68vw;
+		text-align: center;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	.popup__container {
+		align-items: center;
+	}
+}
+
