@@ -11,7 +11,7 @@ let title = document.querySelector('.info__title');
 let subtitle = document.querySelector('.info__subtitle');
 
 function popupToogle() {
-	if (popup.classList.contains('popup_opened') === false) {
+	if (!popup.classList.contains('popup_opened')) {
 		inputName.value = title.textContent
 		inputJob.value = subtitle.textContent
 	}
